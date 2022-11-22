@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="css/output.css" rel="stylesheet" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/self.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-900">
+    <div class="bg-slate-900">
+        <header class="fixed z-10 w-full py-5 text-white bg-slate-900 shadow-lg border-b-2 border-b-black">
+            <nav class="flex text-xl justify-evenly">
+                <a href="#informacion" class="p-1 hover:border-b-2 hover:border-cyan-500 active:bg-cyan-600">Información
+            <span class="material-symbols-outlined hover:text-cyan-500">
+              tips_and_updates
+            </span></a
+          >
+          <a
+            href="#galeria"
+            class="p-1 hover:border-b-2 hover:border-cyan-500 active:bg-cyan-600"
+            ><span>Galería</span
+            ><span class="material-symbols-outlined"> image </span></a
+          >
+          <a
+            href="#contacto"
+            class="p-1 hover:border-b-2 hover:border-cyan-500 active:bg-cyan-600"
+            ><span>Contacto</span>
+            <span class="material-symbols-outlined">
+              connect_without_contact
+            </span></a
+          >
+        </nav>
+      </header>
+      <div id="" class="relative">
+        <img
+          src="img/bg-index3.jpg"
+          alt="index"
+          class="rounded-md md:object-cover md:left-1/3 md:relative md:w-7/12 md:h-screen"
+        />
+        <div
+          class="invisible md:visible left-40 top-32 absolute azul cuadrado rounded-sm"
+        ></div>
+        <div
+          class="invisible md:visible absolute cuadrado azul left-60 arriba rounded-sm"
+        ></div>
+        <div
+          class="invisible md:visible absolute cuadrado azul left-9 top-80 rounded-sm"
+        ></div>
+        <div class="absolute top-1/3 left-4 md:top-64 md:left-52">
+          <h1
+            class="text-3xl font-bold text-white md:text-7xl hover:scale-125 transition duration-300 ease-in-out"
+          >
+            Las mascotas <br />
+            visten <br />
+            <span class="invisible md:visible">a la</span>
+            <span class="invisible md:visible cursiva md:underline"
+              >moda&#46;</span
+            >
+            <span class="block absolute left-60 top-32 md:hidden">a la</span>
+            <span
+              class="cursiva underline block absolute left-60 top-48 text-3xl md:hidden"
+              >moda&#46;</span
+            >
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div id="informacion" class="text-sky-500 bg-slate-900">
+      <h2 class="m-2 text-2xl md:text-4xl font-bold text-center">
+        Información
+      </h2>
+      <h3 class="mb-4 text-xl md:text-3xl text-center text-white">
+        ¿Qué y cómo lo hago?
+      </h3>
+      <div class="grid grid-cols-1 m-8 md:grid-cols-2 md:place-items-center">
+        <div>
+          <p class="text-lg md:text-2xl text-gray-200">
+            Me dedico a hacer ropa para perros y gatos. Principalmente ocupo
+            tela polar para la epoca de frío pero puede ser la tela de tu
+            elección&#46; <br />
+            <br />
+            Realizo diferentes modelos: capas, de cuerpo completo y la mezcla de
+            una capa con el traje completo&#46; <br />
+            Además de hacer trajes especiales por ejemplo para el día de
+            muertos, navidad, un superhéroe o cualquier personaje&#46;
+            &#161;Puedes ver ejemplos en la galería&#33;
+          </p>
+        </div>
+        <div>
+          <img
+            src="img/bg-info.png"
+            alt="Información"
+            class="mx-auto md:w-96"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="galeria" class="h-screen">
+      <h2 class="m-2 text-2xl md:text-4xl font-bold text-center text-sky-500">
+        Galería
+      </h2>
+      <h3 class="mb-4 text-xl md:text-3xl text-center text-white">
+        Estos son algunas de las prendas que he realizado &#58; &#41;
+      </h3>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide relative"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner relative w-3/6 mx-auto overflow-hidden">
+          <div class="carousel-item active relative float-left w-full">
+            <img
+              src="img/img1.jpg"
+              class="block w-auto md:w-80 mx-auto"
+              alt="Wild Landscape"
+            />
+          </div>
+          <div class="carousel-item relative float-left w-full">
+            <img
+              src="img/img2.jpg"
+              class="block w-auto md:w-80 mx-auto"
+              alt="Camera"
+            />
+          </div>
+          <div class="carousel-item relative float-left w-full">
+            <img
+              src="img/img3.jpg"
+              class="block w-auto md:w-80 mx-auto"
+              alt="Exotic Fruits"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon inline-block bg-no-repeat"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon inline-block bg-no-repeat"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div>
+        <p class="text-white text-center">
+          Da
+          <span class="cursiva text-sky-500"><a href="">clic aquí</a></span>
+                para ver más diseños
+                </p>
+    </div>
+    </div>
+    <div id="contacto" class="h-screen">
+        <h2 class="m-2 text-2xl md:text-4xl font-bold text-center text-sky-500">
+            Contacto
+        </h2>
+        <h3 class="mb-4 text-xl md:text-3xl text-center text-white">
+            Contáctame por estos medios y no olvides seguirme en mis redes sociales&#46;
+        </h3>
+
+        <div class="grid grid-cols-2 justify-items-center content-center">
+            <div><img src="img/bg-contacto.png" alt="" class="w-80 mx-auto" /></div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="#1399f1" class="bi bi-facebook p-2" viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+            />
+          </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="#40c051" class="bi bi-whatsapp p-2" viewBox="0 0 16 16">
+            <path
+              d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+            />
+          </svg>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-black p-5">
+        <h1 class="text-white text-xl text-center">
+            El sueño de las mascotas&copy; 2022
+        </h1>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+
+</html>
